@@ -11,7 +11,10 @@
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-116389014-1', 'auto');
+
     ga('send', 'pageview');
+    ga('send', 'event', 'TestEvent', 'play', 'cats.mp4');
+
     </script>
     <!-- End Google Analytics -->
 
@@ -90,7 +93,7 @@
                 <p>Google Analytics is an analytics service provided for free by Google. It allows you get an overview of how many people are visiting your site, where they come from, what they do on your site, and much more!</p>
             </div>
             <li>
-                        <a class="page-scroll" href="basket.html">Add To Basket</a>
+                        <a class="page-scroll" href="basket.html" onclick="ga('send', 'event', 'PDF', 'Download', 'Company Brochure – PDF Download');">Add To Basket</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="reviews.html">All Reviews</a>
