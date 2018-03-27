@@ -16,6 +16,8 @@
     // Category’, ‘Action’, ‘Label’, ‘Value’
     ga('send', 'event', 'TestEventCategory', 'testAction', 'testLabel');
 
+    var myFunc = window.ga('send', 'event', 'Basket', 'Click', 'Add To Basket');
+
     </script>
     <!-- End Google Analytics -->
 
@@ -94,16 +96,16 @@
                 <p>Google Analytics is an analytics service provided for free by Google. It allows you get an overview of how many people are visiting your site, where they come from, what they do on your site, and much more!</p>
             </div>
                     <li>
-                        <a class="page-scroll" href="basket.html" onclick="ga('send', 'event', 'Basket', 'Click', 'Add To Basket');">Add To Basket</a>
+                        <a class="page-scroll" href="basket.html" onclick="myFunc">Add To Basket</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="reviews.html">All Reviews</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="recommendation.html">You can also buy ...</a>
+                        <a class="page-scroll" href="recommendation.html">You can also buy ..</a>
                     </li>
                      <li>
-                        <a class="page-scroll" href="noclick.html">No one click me link ...</a>
+                        <a class="page-scroll" href="noclick.html">No one click me link ..</a>
                     </li>
                 </li>
         </div>    
