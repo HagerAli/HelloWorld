@@ -5,19 +5,21 @@
 
     <!-- Google Analytics -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-116389014-1', 'auto');
+        ga('create', 'UA-116389014-1', 'auto');
 
-    ga('send', 'pageview');
-    // Category’, ‘Action’, ‘Label’, ‘Value’
-    ga('send', 'event', 'TestEventCategory', 'testAction', 'testLabel');
+        ga('send', 'pageview');
+        // Category’, ‘Action’, ‘Label’, ‘Value’
+        ga('send', 'event', 'TestEventCategory', 'testAction', 'testLabel');
 
-    var myFunc = window.ga('send', 'event', 'Basket', 'Click', 'Add To Basket');
+        // var myFunc = window.ga('send', 'event', 'Basket', 'Click', 'Add To Basket');
 
+        // function myFunc2() { console.log('hi');    }
+        function sendGAEvent() { ga('send', 'event', 'Basket', 'Click', 'Add To Basket'); console.log('sending event to GA - add to basket'); }
     </script>
     <!-- End Google Analytics -->
 
@@ -68,7 +70,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-rpageviewight">
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
@@ -83,7 +85,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- /.navbear-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -96,7 +98,7 @@
                 <p>Google Analytics is an analytics service provided for free by Google. It allows you get an overview of how many people are visiting your site, where they come from, what they do on your site, and much more!</p>
             </div>
                     <li>
-                        <a class="page-scroll" href="basket.html" onclick="myFunc">Add To Basket</a>
+                        <a class="page-scroll" href="basket.html" onclick="sendGAEvent();">Add To Basket</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="reviews.html">All Reviews</a>
